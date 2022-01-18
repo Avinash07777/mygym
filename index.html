@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Fitness Garage</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                background:url(./img/bg.jpg);
+                background-size: cover;
+                font-family: 'PT Serif', serif;
+                color: white;
+                height: 1000px;
+            }
+          
+            .left{
+                display: inline-block;
+                position: absolute;
+                top: 20px;
+              
+            }
+            .middle{
+                margin: 28px auto;
+                display: block;
+                width: 47%;
+            }
+            .right{
+                position: absolute;
+                right: 0px;
+                top: 20px ;
+            }
+            .navigation{
+                padding-left: 0px;
+            }
+            .navigation li{
+                display: inline-block;
+                list-style: none;
+                font-weight: bold;
+                font-size: 22px;
+                padding: 4px;
+                  
+            }
+            .navigation li a{
+                color: darkgray;
+                text-decoration: none;
+                padding: 5px;
+                font-weight: bold;
+            }
+            .navigation li a:hover,.navigation li a.active{
+                text-decoration: underline;
+                color:chocolate
+            }
+         .left img{
+             width: 74px;
+             filter: invert(115%);
+         }
+         .btn{
+             margin: 6px 5px;
+             color:rgb(5, 243, 211);
+             padding: 9px 10px;
+             border-radius: 10px;
+             font-weight: bold;
+             cursor: pointer;
+             font-family: 'PT Serif', serif;
+             background-color: chocolate;
+         }
+         .btn:hover{
+            background:linear-gradient(to right,#0c1700,#81f802,#0c1700);
+         }
+         .main{
+             border:2px dashed red;
+             width: 99%;
+             height: 800px;
+         }
+         .heading{
+             color:#3fb1b17c;
+             margin-left: 30px;
+         }
+         .footer{
+            border: 2px dashed yellow;
+            width: 99%;
+            height: 100px;
+         }
+         .sliderbox{
+             width: 1000px;
+             height: 160px;
+             margin: auto;
+             border: 2px dashed grey;
+             padding-left: 0px;
+         }
+         .slider li {
+             list-style: none;
+         }
+         .slider li a{
+             text-decoration: none;
+         }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="left">
+                <a href=""><img src="./img/copylogo.png" alt="#"></a>
+            </div>
+            <div class="middle">
+                <ul class="navigation">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Trainers</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button class="btn">Register Now</button>
+                <button class="btn">Login</button>
+            </div>
+        </header>
+        <div class="main">
+            <h1 class="heading">Join The Fitness Gym Today!</h1>
+           <div class="sliderbox">
+               <ul>
+                   <li><a href="">1</a></li>
+               </ul>
+               <ul>
+                    <li><a href="">2</a></li>
+               </ul>
+               <ul>
+                    <li><a href="">3</a></li>
+               </ul>
+           </div>
+        </div>
+        <footer class="footer">
+            Footer
+        </footer>
+    </body>
+</html>
